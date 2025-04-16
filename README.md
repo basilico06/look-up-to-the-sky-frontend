@@ -14,7 +14,7 @@ Il progetto ha fatto uso di tecnologie avanzate e consolidate nell’ambito dell
 Il progetto è stato suddiviso in due componenti principali:
 
 - **Backend**: sviluppo di un sistema server-side responsabile della gestione dei dati, dell’autenticazione degli utenti, della validazione delle richieste e dell’interazione con il database. È stato dato particolare rilievo alla sicurezza e all’ottimizzazione delle query.
-- **Frontend**: se presente, la parte client è stata progettata per comunicare in maniera efficiente con il backend RESTful, garantendo un’interfaccia utente fluida e reattiva.
+- **Frontend**: la parte client è stata progettata per comunicare in maniera efficiente con il backend RESTful, garantendo un’interfaccia utente fluida e reattiva, minimizzando le chiamate al backend.
 
 ## Obiettivi raggiunti
 Durante il progetto sono state implementate le seguenti funzionalità principali:
