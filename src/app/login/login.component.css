@@ -1,0 +1,374 @@
+
+
+.solar {
+
+  height: 50px;
+  width: 50px;
+  background: orange;
+  border-radius: 25px;
+  position: relative;
+  -webkit-animation: glow 1.5s linear infinite;
+  -moz-animation: glow 1.5s linear infinite;
+}
+.solar i {
+  border-radius: 250px;
+  display: block;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+}
+.solar i:before {
+  content: "";
+  border-radius: 25px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 45%;
+}
+.solar i.mercury {
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  left: 50%;
+  top: 50%;
+  margin-top: -40px;
+  -webkit-animation: orbit 1.5s linear infinite;
+  -moz-animation: orbit 1.5s linear infinite;
+}
+.solar i.mercury:before {
+  background: #6f5f5f;
+  height: 7px;
+  width: 7px;
+}
+.solar i.venus {
+  width: 110px;
+  height: 110px;
+  margin-left: -55px;
+  left: 50%;
+  top: 50%;
+  margin-top: -55px;
+  -webkit-animation: orbit 3s linear infinite;
+  -moz-animation: orbit 3s linear infinite;
+}
+.solar i.venus:before {
+  background: #e7a71f;
+  height: 10px;
+  width: 10px;
+}
+.solar i.earth {
+  width: 140px;
+  height: 140px;
+  margin-left: -70px;
+  left: 50%;
+  top: 50%;
+  margin-top: -70px;
+  -webkit-animation: orbit 4.5s linear infinite;
+  -moz-animation: orbit 4.5s linear infinite;
+}
+.solar i.earth:before {
+  background: #63bee2;
+  height: 10px;
+  width: 10px;
+}
+.solar i.mars {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  left: 50%;
+  top: 50%;
+  margin-top: -85px;
+  -webkit-animation: orbit 6s linear infinite;
+  -moz-animation: orbit 6s linear infinite;
+}
+.solar i.mars:before {
+  background: red;
+  height: 10px;
+  width: 10px;
+}
+.solar i.belt {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-width: 25px;
+  width: 240px;
+  height: 240px;
+  margin-left: -120px;
+  border-color: rgba(36, 35, 35, 0.21);
+  left: 50%;
+  top: 50%;
+  margin-top: -120px;
+}
+.solar i.jupiter {
+  width: 260px;
+  height: 260px;
+  margin-left: -130px;
+  left: 50%;
+  top: 50%;
+  margin-top: -130px;
+  -webkit-animation: orbit 7.5s linear infinite;
+  -moz-animation: orbit 7.5s linear infinite;
+}
+.solar i.jupiter:before {
+  background: #cf9b2b;
+  top: -15px;
+  height: 30px;
+  width: 30px;
+}
+.solar i.saturn {
+  width: 320px;
+  height: 320px;
+  margin-left: -160px;
+  left: 50%;
+  top: 50%;
+  margin-top: -160px;
+  -webkit-animation: orbit 9s linear infinite;
+  -moz-animation: orbit 9s linear infinite;
+}
+.solar i.saturn:before {
+  background: #cf7a2b;
+  top: -10px;
+  height: 20px;
+  width: 20px;
+}
+.solar i.saturn:after {
+  background: #fff;
+  width: 30px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 1px;
+  content: "";
+  right: 43.5%;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+}
+.solar i.uranus {
+  width: 360px;
+  height: 360px;
+  margin-left: -180px;
+  left: 50%;
+  top: 50%;
+  margin-top: -180px;
+  -webkit-animation: orbit 10.5s linear infinite;
+  -moz-animation: orbit 10.5s linear infinite;
+}
+.solar i.uranus:before {
+  background: #10c593;
+  top: -8px;
+  height: 15px;
+  width: 15px;
+}
+.solar i.neptune {
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  left: 50%;
+  top: 50%;
+  margin-top: -200px;
+  -webkit-animation: orbit 12s linear infinite;
+  -moz-animation: orbit 12s linear infinite;
+}
+.solar i.neptune:before {
+  background: #1470e4;
+  top: -8px;
+  height: 15px;
+  width: 15px;
+}
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    background: #ffeb00;
+    box-shadow: 0 0 20px orange;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+@-moz-keyframes orbit {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(-180deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes glow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    background: #ffeb00;
+    box-shadow: 0 0 20px orange;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+.sistema-solar{
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 90vh; /* Occupa tutta l'altezza della pagina */
+  margin-left:40vb; /* Centra verticalmente */
+  transform: scale(1.5);
+}
+
+html, body {
+
+  width: 100vw;
+
+  margin: 0;
+}
+
+.login {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  right: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.6) ;
+
+}
+
+/* From Uiverse.io by Praashoo7 */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: red;
+  color: white;
+}
+

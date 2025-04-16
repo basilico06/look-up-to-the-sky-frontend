@@ -1,0 +1,29 @@
+<div class="container" >
+    <div class="header">
+      <h1>LOOK UP TO THE STARS</h1>
+
+    </div>
+
+
+    <div class="container2">
+
+        <div class="map">
+
+            <div>
+                <h1>Bentornato {{this.x}}</h1>
+            </div>
+
+        </div>
+
+        <div class="list-event">
+
+            <h1>Prossimi eventi </h1>
+            <div class="list">
+                <app-card *ngFor="let event of eventList$ | async" [events]="event"></app-card>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

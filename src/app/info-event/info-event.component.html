@@ -1,0 +1,15 @@
+
+
+<div class="info-event-container">
+    <h1>Event Details</h1>
+    <div *ngIf="evento">
+        <h2><strong>Name:</strong> {{ evento.info.name }}</h2>
+        <p><strong>Date:</strong> {{ evento.dateObject }}</p>
+        <p><strong>Closest approach distance:</strong> {{ evento.info.dist_min}} AU</p>
+        <p><strong>Diameter:</strong> {{ evento.info.diameter }}</p>
+        <p><strong>Speed:</strong> {{ evento.info.v_inf }} KM/S</p>
+    </div>
+    <div *ngIf="!evento">
+        <p>No event details available.</p>
+    </div>
+</div>

@@ -1,0 +1,2 @@
+
+ C:\protoc\bin\protoc.exe -I=C:/look-up-to-the-sky-frontend/src/service/proto C:/look-up-to-the-sky-frontend/src/service/proto/hello.proto --plugin=protoc-gen-grpc-web="C:/grpc-web/protoc-gen-grpc-web.exe" --grpc-web_out=import_style=typescript,mode=grpcwebtext:C:/look-up-to-the-sky-frontend/src/service/proto

@@ -1,0 +1,85 @@
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.container2 {
+  flex: 1;
+  display: flex;
+    position: static;
+  overflow: hidden;
+
+}
+
+.map {
+    flex: 3;
+    display: flex;
+
+    justify-content: start;
+    align-items: end;
+    background: rgb(15,15,15);
+    background: linear-gradient(90deg, rgba(15,15,15,1) 0%, rgb(16, 23, 23) 63%, rgba(0,35,42,1) 100%);
+}
+
+.map>div>h1 {
+
+  color: white;
+  font-size: 4em;
+  padding: 10px;
+}
+
+.weather-container{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list-event {
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 100px);
+  padding-right: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  text-align: center;
+
+}
+
+
+.header {
+  padding: 20px;
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+/* Stili preesistenti */
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.map h1,
+.list-event h1 {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+
+
+
+
+
+
+
