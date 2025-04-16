@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Cookie } from 'cookie';
+import  Cookie  from 'cookie';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,7 @@ export class AuthService {
     }
 
     async isLoggedIn() {
-      if (cookie.get('token') !== '') {
+      if (Cookie('token') !== '') {
         return await this.verifyToken(cookie.get('token'))
       }
       else
